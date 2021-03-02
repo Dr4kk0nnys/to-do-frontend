@@ -11,10 +11,7 @@ const doFetch = async({ url, method, body }: IFetchParameters): Promise<IFetchRe
         },
         body: JSON.stringify(body)
     });
-    console.log(rawResponse);
-    console.log('type', typeof(rawResponse));
-    
-    
+
     const content = await rawResponse.json();
     sessionCheck(content);
 
