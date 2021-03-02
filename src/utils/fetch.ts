@@ -3,7 +3,7 @@ import { IFetchParameters, IFetchReturn } from 'interfaces/FetchParameters';
 import { sessionCheck } from 'utils/session';
 
 const doFetch = async({ url, method, body }: IFetchParameters): Promise<IFetchReturn> => {
-    const rawResponse = await fetch('http://localhost:8000/' + url, {
+    const rawResponse = await fetch('https://to-do-list-backend-dr4kk0nnys.herokuapp.com/' + url, {
         method,
         headers: {
             'Accept': 'application/json',
