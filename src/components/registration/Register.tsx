@@ -75,7 +75,7 @@ const Register: React.FC = () => {
                             </ul>
                         </div>
 
-                        <p className='account-info-link'>Already have an account ? <a href="/login/">Sign In</a></p>
+                        <p style={{ fontSize: '10px' }} className='account-info-link'>Already have an account ? <a href="/login/">Sign In</a></p>
                     </div>
                 </div>
             </div>
