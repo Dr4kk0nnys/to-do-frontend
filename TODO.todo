@@ -1,0 +1,34 @@
+Frontend:
+  ✔ Refactor the frontend @today @done(21-02-23 11:18)
+  ✔ Fix the api requests @critical @done(21-02-23 10:27)
+  ✔ Organize by deadlines @low @done(21-02-22 18:29)
+  ✔ Done @low @done(21-02-23 14:49)
+  ✔ Bold @low @done(21-02-23 15:30)
+  ✔ Italic @low @done(21-02-23 16:54)
+  ✔ Session check after each Fetch, inside the function itself @done(21-02-24 08:55)
+  ✔ Implement favorite (https://fontawesome.com/icons/bookmark?style=solid) @done(21-02-24 10:02)
+  ✔ Comment the code @done(21-02-24 11:33)
+  ✘ Display error message while loggin in / registering @cancelled(21-03-01 13:59)
+  ✔ Display "Are you sure" message while deleting a to do @done(21-03-01 18:17)
+  ☐ Show when the to do was created on hover
+  ☐ Change the border color on update
+  ☐ Improve the html ( and typescript )
+
+Modal: 
+  ☐ While creating the to do, have an auto complete for the deadlines with the current ones
+
+Backend: 
+  ☐ Try not calling the database 4 times. @low 
+  ☐ Check for bugs after changing the checks.ts file
+  ☐ To Dos must have a creation date and time
+  ✔ Should the sessionId be returned on the object check ? @low @done(21-02-22 14:48)
+  ✔ Check if the object is a child before inserting it @high @done(21-02-23 11:24)
+
+Bug:
+  ✔ Child elements don't change icons @done(21-02-24 08:18)
+  ✔ Styles are not responsive @done(21-02-26 10:34)
+  ✔ Edit child is editing parent @done(21-02-25 12:51)
+  ✔ Delete child is deleting parent @done(21-02-25 12:51)
+
+Tests:
+  ✔ Make sure you can edit the styles without problem. @done(21-03-01 15:15)

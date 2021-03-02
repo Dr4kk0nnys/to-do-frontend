@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;700&display=swap');
+
+.toDos-holder { list-style: none; }
+.toDos-holder h3:hover + div { opacity: 1; }
+.toDos-holder div:hover { opacity: 1; }
+.toDos-holder ul li:hover div { opacity: 1; }
+
+.toDos-holder .border {
+    margin-right: 7px;
+    padding-top: 6px;
+    /* border-left: white; */
+    border-left-width: 5px;
+    border-left-style: solid;
+}
+
+.toDo-title {
+    display: inline-block;
+    font-size: 15px;
+    margin: 3px 0px 8px 0px;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    
+    word-break: break-all;
+
+    position: relative;
+    bottom: 4px;
+}
+ul .child .toDo-title { margin: 6px 0px 6px 0px; }
+
+.toDo-options {
+    margin-left: 35px;
+    display: inline-block;
+    opacity: 0;
+
+    position: relative;
+    bottom: 4px;
+
+    transition: ease .3s;
+}
+
+.far { margin: 0px 10px 0px 10px; }
+.fas { margin: 0px 10px 0px 10px; }
+
+.fa-plus { color: rgb(51, 255, 51); }
+.fa-trash { color: rgb(255, 90, 90); }
+.fa-pen { color: rgb(9, 127, 206); }
+
+i { font-size: 13px; }
+i:hover { font-size: 15px; }
+
+.icon-disabled {
+    color: #669;
+    cursor: not-allowed;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.bold { font-weight: 700; }
+.italic { font-style: italic; }
+.fas.fa-heart { color: red; }
+.favorite + div { opacity: 1; }
+
+.toDo-Update {
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: white;
+
+    font-size: 15px;
+    margin: 8px 0px 8px 0px;
+    font-family: 'Courier New', Courier, monospace;
+
+    position: relative;
+    bottom: 4px;
+}
+
+
+/* Checkbox */
+.check {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+}
+.check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34,50,84,0.03);
+    opacity: 0;
+}
+.check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+}
+.check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+.check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+.check:hover:before {
+    opacity: 1;
+}
+.check:hover svg {
+    stroke: #4285f4;
+}
+input:checked + .check svg {
+    stroke: #4285f4;
+}
+input:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+input:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 350ms cubic-bezier(1, 0, 0.37, 0.91);
+} 
