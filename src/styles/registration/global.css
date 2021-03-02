@@ -55,7 +55,7 @@
     width: 100%;
 }
 .registration-class {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 100;
     margin: 25px 0 1rem;
     text-transform: uppercase;
@@ -100,5 +100,5 @@ a {
 }
 
 .account-info-link {
-    margin-top: 6rem;
+    margin-top: 10px;
 }
